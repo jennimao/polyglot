@@ -1,0 +1,22 @@
+{
+    "name": "polyglot",
+    "description": "multiple subtitles",
+    "author": "Jenny Mao, Sam Detor",
+    "version": "1.0.0",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+      "build": "node utils/build.js",
+      "build-debug": "cross-env DISABLE_MINI=1 node utils/build.js",
+      "pack": "node utils/pack.js"
+    },
+    "devDependencies": {
+      "clean-webpack-plugin": "^4.0.0",
+      "copy-webpack-plugin": "^9.0.1",
+      "cross-env": "^7.0.3",
+      "fs-extra": "^10.0.0",
+      "jszip": "^3.7.1",
+      "webpack": "^5.61.0",
+      "vanilla-picker": "^2.12.1"
+    }
+  }

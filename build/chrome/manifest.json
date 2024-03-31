@@ -1,0 +1,30 @@
+{
+	"short_name": "polyglot",
+	"description": "Display subtitles in multiple languages to Netflix.",
+	"version": "1.0",
+	"manifest_version": 3,
+	"name": "Polyglot",
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": "cat.png"
+	},
+	"permissions": [
+		"activeTab",
+		"storage"
+	],
+	"content_scripts": [
+		{
+			"js": [
+				"content.min.js"
+			],
+			"matches": [
+				"https://developer.chrome.com/docs/extensions/*",
+				"https://developer.chrome.com/docs/webstore/*",
+				"https://www.netflix.com/*"
+			]
+		}
+	],
+	"icons": {
+		"16": "cat.png"
+	}
+}

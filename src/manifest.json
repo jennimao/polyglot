@@ -5,8 +5,8 @@
     "description": "Display subtitles in multiple languages to Netflix.",
 
     "action": {
-        "default_popup": "popup/popup.html",
-        "default_icon": "images/cat.png"
+        "default_popup": "popup.html",
+        "default_icon": "cat.png"
       },
 
     "permissions": [
@@ -16,7 +16,7 @@
 
     "content_scripts": [
         {
-        "js": ["scripts/content.js"],
+        "js": ["content.min.js"],
         "matches": [
             "https://developer.chrome.com/docs/extensions/*",
             "https://developer.chrome.com/docs/webstore/*", 
@@ -26,7 +26,7 @@
     ],
 
     "icons": {
-      "16": "images/cat.png"
+      "16": "cat.png"
     }
 
   }
